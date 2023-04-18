@@ -18,6 +18,7 @@ public class BootjpaexampleApplication {
 		UserRepository userRepository= context.getBean(UserRepository.class);
 		
 		//Adding a single user
+		//Adding a single user
 /*		User user= new User();
 		user.setName("Gajanan");
 		user.setCity("Udgir");
