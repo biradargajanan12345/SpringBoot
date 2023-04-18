@@ -20,7 +20,7 @@ public class User {
 
 	public User() {
 		super();
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor 
 	}
 
 	public User(int id, String name, String city, String status) {
