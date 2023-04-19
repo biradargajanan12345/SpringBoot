@@ -62,6 +62,11 @@ public class BootjpaexampleApplication {
 		allUsers.forEach(user-> System.out.println(user));
 		userRepository.deleteAll(allUsers);
 */
+		
+		//custom method Implementation
+		List<User> users= userRepository.findByName("Gajanan");
+		users.forEach(user-> System.out.println(user));
+		
 	}
 
 }
