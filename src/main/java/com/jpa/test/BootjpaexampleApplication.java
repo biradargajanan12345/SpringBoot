@@ -64,8 +64,20 @@ public class BootjpaexampleApplication {
 */
 		
 		//custom method Implementation
-		List<User> users= userRepository.findByName("Gajanan");
+/*		List<User> users= userRepository.findByName("Gajanan");
 		users.forEach(user-> System.out.println(user));
+*/
+		
+		//Using Query
+		List<User> allusers= userRepository.getAllUser();
+		allusers.forEach(e-> System.out.println(e));
+		System.out.println("---------------------------");
+		
+		userRepository.getUserByName("Gajanan").forEach(e-> System.out.println(e));
+		System.out.println("---------------------------");
+		
+		userRepository.getUsers().forEach(e->System.out.println(e));
+		
 		
 	}
 
